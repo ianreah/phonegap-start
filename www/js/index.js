@@ -38,5 +38,8 @@ var app = {
         document.querySelector('#' + id + ' .pending').className += ' hide';
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
+
+        // Test an alert
+        navigator.notification.alert('Device is ready!');
     }
 };
